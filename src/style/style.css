@@ -1,0 +1,451 @@
+.portfolioVideo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 5% 10%;
+}
+
+.portfolioVideoCaption {
+  max-width: 100%;
+}
+
+.skills p {
+  font-size: 0.8rem;
+  border: 1px solid #3c3c3c;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.portfolioPararaph {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #3c3c3c;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.portfolioVideoCaption h3{
+ font-weight: 600;
+}
+.portfolioPararaphBlock h3{
+  font-weight: 600;
+}
+video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .portfolioVideo {
+    flex-direction: row;
+    align-items: stretch;
+    height: auto;
+  }
+
+  .portfolioVideoCaption {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  video {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.portfolioSlider {
+  display: flex;
+  flex-direction: column; /* Столбец по умолчанию для маленьких экранов */
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.portfolioPararaphBlock {
+  max-width: 100%;
+}
+
+.skillsR p {
+  font-size: 0.8rem;
+  border: 1px solid #3c3c3c;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+.skillsR {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.awssld {
+  width: 100%; /* Слайдер занимает всю ширину */
+  height: auto; /* Высота слайдера автоматически подстраивается */
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-height: 40px;
+  --slider-height-percentage: 60%;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 6px;
+  --control-button-width: 15%;
+  --control-button-height: 35%;
+  --control-button-opacity: 0.5;
+  --control-button-hover-opacity: 0.75;
+  --control-button-background: transparent;
+  --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
+  --slider-transition-duration: 575ms;
+  --organic-arrow-color: rgba(29, 29, 31, 1) !important;
+  --organic-arrow-border-radius: 0;
+  --control-bullet-color: rgba(29, 29, 31, 1) !important;
+  --control-bullet-active-color: #6a6a6a;
+  --content-background-color: #2f2f2f;
+}
+
+.wrapSlide img {
+  width: 100%; /* Картинка адаптируется по ширине слайдера */
+  height: 100%; /* Растягивается по высоте контейнера */
+  object-fit: cover; /* Соотношение сторон сохраняется */
+}
+
+@media (min-width: 768px) {
+  .portfolioSlider {
+    flex-direction: row; /* Для больших экранов — строка */
+    align-items: stretch; /* Оба блока растянуты по высоте */
+    height: auto; /* Высота автоматически подстраивается */
+    width: 80%;
+    margin: 5%;
+  }
+
+  .portfolioPararaphBlock {
+    width: 50%; /* Половина экрана для текста */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Растягивание текста по высоте */
+  }
+
+  .awssld {
+    width: 50%; /* Половина экрана для слайдера */
+    height: 100%; /* Растягиваем слайдер по высоте */
+  }
+
+  .wrapSlide img {
+    width: 100%; /* Картинки занимают всю ширину слайда */
+    height: 100%; /* Высота слайдов соответствует высоте контейнера */
+    object-fit: cover; /* Изображения не искажаются */
+  }
+}
+
+.skillsR p:hover{
+  background-color: #3c3c3c;
+  color: white;
+  cursor: pointer;
+}
+.skills p:hover{
+  background-color: #3c3c3c;
+  color: white;
+  cursor: pointer;
+}
+.companySocial a{
+  transition: transform 0.3s ease;
+}
+.companySocial a:hover{
+  transform: rotate(20deg);
+}
+html {
+  scroll-behavior: smooth;
+}
+.preview{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15%;
+  background-image: url('../assets/img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+.navList{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 20px
+}
+.navLink{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+}
+.navLink:hover{
+  text-decoration: underline;
+}
+.heading{
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 90px;
+  color: rgba(255, 255, 255, 1);
+}
+.pharagraph{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+
+}
+.hero-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 50px;
+}
+.cta-button{
+  width: 180px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20.57px;
+  text-align: center;
+  padding: 18px;
+}
+.metricNumber{
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 89.6px;
+  color: rgba(29, 29, 31, 1);
+
+}
+.metricParagraph{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(131, 131, 131, 1);
+}
+.metricHeading{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 61.6px;
+  color: rgba(29, 29, 31, 1);
+}
+.metricDecription{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3c3c3c;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.connection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.companyName{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.6px;
+  color: rgba(255, 255, 255, 1);
+}
+.companyAdress{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(131, 131, 131, 1);
+}
+.connectionParagraph{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.6px;
+  color: rgba(255, 255, 255, 1);
+}
+.footer{
+  background-color: rgba(29, 29, 31, 1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  height: 400px;
+  align-items: center;
+}
+.companySocial{
+  display: flex;
+  gap: 25px;
+}
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awssld__content {
+  background-color: white !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+.awssld__controls button .awssld__controls__arrow-left, .awssld__controls button .awssld__controls__arrow-right {
+  opacity: 1 !important;
+}
+.emailLink::after{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 255px;
+  background-image: url('../assets/img/Stroke.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.emailLink:hover::after {
+  transform: translateX(15px); /* Сдвиг стрелки вправо на 5px при наведении */
+}
+.emailLink{
+  height: 40px;
+  color: white;
+  border-bottom: 1px solid rgba(131, 131, 131, 1);
+  font-size: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+.numMetrics{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 40px
+}
+@media screen and (max-width: 1150px) {
+  .footer {
+    background-color: rgba(29, 29, 31, 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    height: 400px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 970px) {
+  .numMetrics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px
+  }
+  .metricNumber {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 65.6px;
+    color: rgba(29, 29, 31, 1);
+  }
+  .metricDecription {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3c3c3c;
+  }
+  .metricHeading {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41.6px;
+    color: rgba(29, 29, 31, 1);
+  }
+  .heading {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 90px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .hero-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 20px;
+  }
+  .footer {
+    background-color: rgba(29, 29, 31, 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    height: 400px;
+    align-items: center;
+  }
+  .connectionParagraph {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 41.6px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .emailLink{
+    height: 40px;
+    color: white;
+    border-bottom: 1px solid rgba(131, 131, 131, 1);
+    font-size: 14px
+  }
+  .emailLink::after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 190px;
+    background-image: url(/src/assets/img/Stroke.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 1550px) {
+.portfolioPararaph {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.metricDecription {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #3c3c3c;
+}
+}
+@media screen and (min-width: 1850px) {
+.metricDecription {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #3c3c3c;
+}
+.portfolioPararaph {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+}
